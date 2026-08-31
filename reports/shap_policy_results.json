@@ -1,0 +1,30 @@
+{
+  "top_shap_features": {
+    "person_income": 1.028967261314392,
+    "loan_int_rate": 0.9659667015075684,
+    "loan_percent_income": 0.8387929201126099,
+    "loan_intent_VENTURE": 0.4786028563976288,
+    "person_home_ownership_RENT": 0.43899738788604736
+  },
+  "overall_bad_rate": 0.21869216533004318,
+  "policy_scenarios": [
+    {
+      "reject_worst_n_deciles": 1,
+      "approved_bad_rate": 0.1353,
+      "bad_rate_reduction_pct": 38.11,
+      "volume_retained_pct": 90.36
+    },
+    {
+      "reject_worst_n_deciles": 2,
+      "approved_bad_rate": 0.0576,
+      "bad_rate_reduction_pct": 73.66,
+      "volume_retained_pct": 80.04
+    },
+    {
+      "reject_worst_n_deciles": 3,
+      "approved_bad_rate": 0.0398,
+      "bad_rate_reduction_pct": 81.8,
+      "volume_retained_pct": 71.68
+    }
+  ]
+}

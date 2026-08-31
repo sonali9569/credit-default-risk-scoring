@@ -1,0 +1,16 @@
+# Render Blueprint — lets Render auto-configure the service from this file
+# instead of manual dashboard setup. See docs/deployment_render.md for the
+# step-by-step. Native Python build (no Docker involved on Render's end, even
+# though the repo also has a Dockerfile if you ever prefer that route instead —
+# see the "Docker instead" note in the runbook).
+services:
+  - type: web
+    name: credit-risk-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r app/requirements.txt
+    startCommand: uvicorn app.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

@@ -1,0 +1,17 @@
+pandas==2.3.3
+numpy==2.3.5
+scikit-learn==1.7.2  # pinned below latest: optbinning 0.20.0 needs a check_array arg removed in sklearn 1.9
+xgboost>=2.0
+imbalanced-learn>=0.12
+optbinning>=0.19
+shap>=0.45
+optuna>=3.6
+mlflow>=2.14
+fastapi>=0.111
+uvicorn>=0.30
+pydantic>=2.7
+joblib>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+scipy>=1.13
+jupyter>=1.0

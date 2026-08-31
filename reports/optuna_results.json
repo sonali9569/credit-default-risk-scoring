@@ -1,0 +1,30 @@
+{
+  "n_trials": 80,
+  "n_trial_workers": 5,
+  "n_jobs_per_model": 2,
+  "elapsed_seconds": 13.528022050857544,
+  "best_val_auc": 0.9493569492228671,
+  "best_params": {
+    "n_estimators": 535,
+    "learning_rate": 0.06519201262322011,
+    "max_depth": 6,
+    "subsample": 0.9333690229093594,
+    "colsample_bytree": 0.9488572466193919,
+    "min_child_weight": 3,
+    "reg_lambda": 6.688559472982023
+  },
+  "test_metrics": {
+    "auc": 0.9484215965614955,
+    "ks": 0.7567383050918579,
+    "gini": 0.896843193122991,
+    "pr_auc": 0.9066025521966234,
+    "brier": 0.06164090728977341
+  },
+  "val_metrics": {
+    "auc": 0.9493569492228671,
+    "ks": 0.7646052837371826,
+    "gini": 0.8987138984457341,
+    "pr_auc": 0.9075330157151146,
+    "brier": 0.06346118250512259
+  }
+}

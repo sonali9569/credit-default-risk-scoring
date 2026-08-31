@@ -1,0 +1,34 @@
+# Data (large, not committed — pull instructions in README)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models / artifacts
+# model_calibrated.pkl, encoder.pkl, feature_names.pkl ARE committed (small, ~3.1MB
+# total) — Render builds directly from the repo with no notebook-execution step,
+# so these have to actually be present. xgb_tuned.pkl (the pre-calibration model,
+# an intermediate artifact not used by the served app) stays ignored/regeneratable.
+models/xgb_tuned.pkl
+models/mlruns/
+mlruns/
+
+# Personal reference docs — not part of the public repo
+PROGRESS.md
+docs/project_report.md
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Env/secrets
+.env
+kaggle.json

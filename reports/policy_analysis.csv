@@ -1,0 +1,4 @@
+reject_worst_n_deciles,approved_bad_rate,bad_rate_reduction_pct,volume_retained_pct
+1,0.1353,38.11,90.36
+2,0.0576,73.66,80.04
+3,0.0398,81.8,71.68
